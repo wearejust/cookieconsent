@@ -25,3 +25,4 @@ export const run = async (userConfig = {}) => {
 export const acceptService = CookieConsent.acceptCategory;
 export const acceptedCategory = CookieConsent.acceptedCategory;
 export const acceptedService = CookieConsent.acceptedService;
+export const getUserPreferences = CookieConsent.getUserPreferences;
