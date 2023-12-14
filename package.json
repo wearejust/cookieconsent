@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:production": "vite build"
+  },
+  "dependencies": {
+    "vanilla-cookieconsent": "^3.0.0-rc.17"
+  },
+  "devDependencies": {
+    "vite": "^5.0.4"
+  }
+}
