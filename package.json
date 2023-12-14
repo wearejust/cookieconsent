@@ -1,4 +1,7 @@
 {
+  "name": "@wearejust/cookieconsent",
+  "version": "1.0.0",
+  "main": "src/cookieconsent.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
