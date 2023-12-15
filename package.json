@@ -1,6 +1,6 @@
 {
   "name": "@wearejust/cookieconsent",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "src/cookieconsent.js",
   "scripts": {
     "dev": "vite",

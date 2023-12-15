@@ -59,7 +59,7 @@ export const defaultConfig = {
             },
             en: {
                 consentModal: {
-                    title: "Deze website maakt gebruik van cookies",
+                    title: "This website uses cookies",
                     description: "We use functional and analytical cookies to optimize our website. By using this website, you agree to our terms and conditions.",
                     acceptAllBtn: "Accept all",
                     acceptNecessaryBtn: "Reject all",
