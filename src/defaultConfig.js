@@ -54,6 +54,11 @@ export const defaultConfig = {
                       description: "Analytische cookies helpen eigenaren van websites begrijpen hoe bezoekers hun website gebruiken, door anoniem gegevens te verzamelen en te rapporteren.",
                       linkedCategory: "analytics"
                     },
+                    {
+                      title: "Marketing cookies",
+                      description: "Marketingcookies worden gebruikt om bezoekers op websites te volgen. De bedoeling is om advertenties weer te geven die relevant en aantrekkelijk zijn voor de individuele gebruiker en daardoor waardevoller voor uitgevers en externe adverteerders.",
+                      linkedCategory: "marketing"
+                    },
                   ]
                 }
             },
@@ -87,6 +92,11 @@ export const defaultConfig = {
                             title: "Analytics Cookies",
                             description: "Analytical cookies help website owners understand how visitors use their website by anonymously collecting and reporting data.",
                             linkedCategory: "analytics"
+                        },
+                        {
+                            title: "Marketing cookies",
+                            description: "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.",
+                            linkedCategory: "marketing"
                         },
                     ]
                 }
