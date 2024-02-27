@@ -3,7 +3,7 @@ export const defaultConfig = {
         consentModal: {
             layout: "box wide",
             position: "bottom right",
-            equalWeightButtons: false,
+            equalWeightButtons: true,
             flipButtons: true
         },
         preferencesModal: {
