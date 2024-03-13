@@ -1,6 +1,6 @@
 {
   "name": "@wearejust/cookieconsent",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "main": "src/cookieconsent.js",
   "types": "types/index.d.ts",
   "scripts": {
