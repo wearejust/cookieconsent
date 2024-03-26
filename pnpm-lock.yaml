@@ -6,15 +6,18 @@ settings:
 
 dependencies:
   vanilla-cookieconsent:
-    specifier: ^3.0.0-rc.17
+    specifier: ^3.0.0
     version: 3.0.0
 
 devDependencies:
   '@types/node':
     specifier: ^20.11.30
     version: 20.11.30
+  typescript:
+    specifier: ^5.4.3
+    version: 5.4.3
   vite:
-    specifier: ^5.0.4
+    specifier: ^5.2.6
     version: 5.2.6(@types/node@20.11.30)
   vite-plugin-dts:
     specifier: ^3.7.3

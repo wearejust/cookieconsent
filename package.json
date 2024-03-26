@@ -10,10 +10,13 @@
     "build:production": "vite build"
   },
   "dependencies": {
-    "vanilla-cookieconsent": "^3.0.0-rc.17"
+    "vanilla-cookieconsent": "^3.0.0"
   },
   "devDependencies": {
-    "vite": "^5.0.4"
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6",
+    "vite-plugin-dts": "^3.7.3"
   },
   "publishConfig": {
     "access": "public"
