@@ -3,6 +3,7 @@ import * as CookieConsent from "vanilla-cookieconsent";
 import { merge } from "ts-deepmerge";
 
 import "vanilla-cookieconsent/dist/cookieconsent.css";
+import "./styles/overrides.css";
 
 import { defaultConfig } from "@/constants";
 import { DeepPartial } from "@/types";
