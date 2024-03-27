@@ -9,7 +9,6 @@ import { DeepPartial } from "@/types";
 
 export const run = async (configuration: DeepPartial<CookieConsentConfig>) => {
   const mergedConfiguration = merge(defaultConfig, configuration);
-  console.log({ configuration: mergedConfiguration });
   await CookieConsent.run(mergedConfiguration as CookieConsentConfig);
 };
 
