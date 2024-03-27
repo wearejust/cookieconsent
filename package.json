@@ -1,15 +1,22 @@
 {
   "name": "@wearejust/cookieconsent",
   "version": "1.1.8",
-  "packageManager": "^pnpm@8.15.0",
-  "main": "src/cookieconsent.js",
-  "types": "types/index.d.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/cookieconsent.umd.cjs",
+  "module": "./dist/cookieconsent.js",
+  "types": "./dist/src/main.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite -- --watch",
+    "clean": "vite clean",
     "build": "vite build",
     "build:production": "vite build"
   },
   "dependencies": {
+    "ts-deepmerge": "^7.0.0",
     "vanilla-cookieconsent": "^3.0.0"
   },
   "devDependencies": {
@@ -17,8 +24,5 @@
     "typescript": "^5.4.3",
     "vite": "^5.2.6",
     "vite-plugin-dts": "^3.7.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
