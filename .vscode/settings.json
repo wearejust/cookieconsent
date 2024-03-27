@@ -1,3 +1,25 @@
 {
-  "cSpell.words": ["cookieconsent", "wearejust"]
+  "files.eol": "auto",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html,javascript,typescript,jsx,tsx]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.validate": ["js", "jsx", "ts", "tsx"],
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["vue", "css", "pcss", "postcss", "sass", "scss"],
+  "cSpell.enabled": true,
+  "cSpell.words": ["cookieconsent", "deepmerge", "wearejust"],
+  "cSpell.language": "en,nl,lorem",
+  "cSpell.ignorePaths": [".vscode/**", "**/package.json", "**/pnpm-lock.yaml"],
+  "cSpell.ignoreWords": ["pcss", "postbuild", "transform"]
 }
