@@ -18,7 +18,7 @@
   "stylelint.enable": true,
   "stylelint.validate": ["vue", "css", "pcss", "postcss", "sass", "scss"],
   "cSpell.enabled": true,
-  "cSpell.words": ["cookieconsent", "deepmerge", "wearejust"],
+  "cSpell.words": ["cookieconsent", "deepmerge", "vite", "wearejust"],
   "cSpell.language": "en,nl,lorem",
   "cSpell.ignorePaths": [".vscode/**", "**/package.json", "**/pnpm-lock.yaml"],
   "cSpell.ignoreWords": ["pcss", "postbuild", "transform"]
