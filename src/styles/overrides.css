@@ -1,3 +1,49 @@
 #cc-main {
   --cc-modal-border-radius: 0;
+
+  a {
+    background-size: 100% 1px;
+    background-position: right bottom;
+    &:hover {
+      background-size: 0 1px;
+    }
+  }
+
+  .cm {
+    box-shadow: none;
+    padding: 2.5rem 2.5rem 3rem 2.5rem;
+
+    &__body {
+      gap: 1.125rem;
+    }
+
+    &__texts {
+      padding-top: 0;
+    }
+
+    &__desc {
+      padding: 0 !important;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    &__btns {
+      padding: 0 !important;
+      border-top: none;
+    }
+  }
+
+  .pm {
+    &__section-title {
+      border-radius: 0;
+    }
+
+    &__section-desc {
+      padding-right: 5rem;
+    }
+
+    .pm__section--toggle .pm__section-desc-wrapper {
+      border-radius: 0;
+    }
+  }
 }
