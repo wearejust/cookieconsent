@@ -1,0 +1,95 @@
+#cc-main {
+  .cm--bar.cm--inline .cm__body {
+    max-width: var(--container-width);
+    padding: var(--body-padding-block) var(--body-padding-inline);
+  }
+
+  .cm__btn-group,
+  .pm__btn-group {
+    button {
+      padding: 1.1em 1.2em 0.75em !important;
+      font-size: 0.8em !important;
+      font-weight: 400 !important;
+      text-transform: lowercase;
+      font-family: Nexa, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  .cm__btn-group,
+  .pm__btn-group {
+    border: none !important;
+  }
+
+  .cm__btn-group {
+    button[data-role="show"] {
+      display: none;
+    }
+  }
+
+  a {
+    font-weight: inherit;
+    background-image: none;
+  }
+
+  p a,
+  [data-cc="show-preferencesModal"] {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+  }
+
+  [data-cc="show-preferencesModal"] {
+    font-size: 0.9em;
+  }
+
+  .pm__section--toggle + .pm__section--toggle {
+    border-top: 1px solid #000;
+  }
+
+  .pm__title {
+    font-size: 1.25rem;
+  }
+
+  .pm__section-title {
+    font-size: 0.95em;
+  }
+
+  .section__toggle:checked:disabled ~ .toggle__icon {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .section__toggle:checked:disabled ~ .toggle__icon .toggle__icon-circle,
+  .toggle__icon {
+    background-color: #000 !important;
+    box-shadow: 0 0 0 1px #000;
+  }
+
+  .pm__section--expandable .pm__section-arrow svg {
+    stroke: #000;
+  }
+
+  .section__toggle:checked:disabled ~ .toggle__icon svg {
+    stroke: #fff;
+  }
+
+  .toggle__icon-off svg,
+  .toggle__icon-on svg {
+    stroke: #000;
+  }
+
+  .section__toggle:checked ~ .toggle__icon {
+    stroke: #000;
+    box-shadow: 0 0 0 1px #000;
+  }
+  .pm__section--toggle .pm__section-desc {
+    padding-top: 0;
+  }
+
+  @media (min-width: 768px) {
+    .pm__section--toggle .pm__section-desc {
+      padding-left: 3.6rem;
+    }
+  }
+}

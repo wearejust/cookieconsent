@@ -5,13 +5,11 @@ export const defaultConfig = {
     consentModal: {
       layout: "box wide",
       position: "bottom right",
-      equalWeightButtons: true,
       flipButtons: true,
     },
     preferencesModal: {
       layout: "box",
       position: "right",
-      equalWeightButtons: true,
       flipButtons: false,
     },
   },
@@ -20,22 +18,20 @@ export const defaultConfig = {
       readOnly: true,
     },
     analytics: {},
+    marketing: {},
   },
   language: {
     default: "nl",
+    autoDetect: "document",
     translations: {
       nl: {
         consentModal: {
-          title: "Deze website maakt gebruik van cookies",
+          title: "",
           description:
-            "Wij maken gebruik van functionele en analytische cookies om onze website te optimaliseren. Door gebruik te maken van deze website ga je akkoord met onze voorwaarden.",
-          acceptAllBtn: "Alles accepteren",
+            "Wij maken gebruik van functionele en analytische cookies om onze website te optimaliseren. Door gebruik te maken van deze website ga je akkoord met ons <a href='/privacybeleid'>privacybeleid</a><br/><button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>Voorkeuren aanpassen</button>",
+          acceptAllBtn: "Akkoord",
           acceptNecessaryBtn: "Afwijzen",
-          showPreferencesBtn: "Voorkeuren beheren",
-          footer: `
-            <a href="#link">Privacybeleid</a>
-            <a href="#link">Algemene voorwaarden</a>
-          `,
+          footer: "",
         },
         preferencesModal: {
           title: "Toestemmingen",
@@ -45,11 +41,6 @@ export const defaultConfig = {
           closeIconLabel: "Sluiten",
           serviceCounterLabel: "Dienst|Diensten",
           sections: [
-            {
-              title: "Cookiegebruik",
-              description:
-                "Deze website maakt gebruik van cookie technologie binnen de gestelde kaders van de AVG.",
-            },
             {
               title:
                 'Strikt noodzakelijke cookies <span class="pm__badge">Altijd ingeschakeld</span>',
@@ -74,14 +65,12 @@ export const defaultConfig = {
       },
       en: {
         consentModal: {
-          title: "This website uses cookies",
+          title: "",
           description:
-            "We use functional and analytical cookies to optimize our website. By using this website, you agree to our terms and conditions.",
-          acceptAllBtn: "Accept all",
-          acceptNecessaryBtn: "Reject all",
-          showPreferencesBtn: "Manage preferences",
-          footer:
-            '<a href="#link">Privacy Policy</a>\n<a href="#link">Terms and conditions</a>',
+            "We use functional and analytical cookies to optimize our website. By using this website, you agree to our <a href='/privacybeleid'>privacy policy</a><br/><button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>Adjust preferences</button>",
+          acceptAllBtn: "Agree",
+          acceptNecessaryBtn: "Reject",
+          footer: "",
         },
         preferencesModal: {
           title: "Consent Preferences",
@@ -91,11 +80,6 @@ export const defaultConfig = {
           closeIconLabel: "Close",
           serviceCounterLabel: "Service|Services",
           sections: [
-            {
-              title: "Cookie Usage",
-              description:
-                "This website uses cookie technology within the established framework of the GDPR.",
-            },
             {
               title:
                 'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
@@ -119,6 +103,5 @@ export const defaultConfig = {
         },
       },
     },
-    autoDetect: "browser",
   },
 } satisfies CookieConsentConfig;
