@@ -32,9 +32,16 @@
     }
   }
 
+  .cm__desc {
+    font-size: 0.9rem;
+  }
   a {
     font-weight: inherit;
     background-image: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   p a,
@@ -44,7 +51,12 @@
   }
 
   [data-cc="show-preferencesModal"] {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    text-rendering: geometricprecision;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .pm__section--toggle + .pm__section--toggle {
