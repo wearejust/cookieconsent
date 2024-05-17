@@ -1,4 +1,8 @@
 #cc-main {
+  --container-width: 90vw;
+  --body-padding-block: 0.625rem;
+  --body-padding-inline: 0.625rem;
+
   .cm--bar.cm--inline .cm__body {
     max-width: var(--container-width);
     padding: var(--body-padding-block) var(--body-padding-inline);
