@@ -11,19 +11,6 @@
 
   .cm__btn-group,
   .pm__btn-group {
-    button {
-      padding: 1.1em 1.2em 0.75em !important;
-      font-size: 0.8em !important;
-      font-weight: 400 !important;
-      text-transform: lowercase;
-      font-family: var(--button-font-family);
-      text-transform: uppercase;
-      letter-spacing: 0.15rem;
-    }
-  }
-
-  .cm__btn-group,
-  .pm__btn-group {
     border: none !important;
   }
 
