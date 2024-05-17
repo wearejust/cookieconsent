@@ -6,6 +6,7 @@ export const defaultConfig = {
       layout: "box wide",
       position: "bottom right",
       flipButtons: true,
+      equalWeightButtons: false,
     },
     preferencesModal: {
       layout: "box",
