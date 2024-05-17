@@ -2,6 +2,7 @@
   --container-width: 90vw;
   --body-padding-block: 0.625rem;
   --body-padding-inline: 0.625rem;
+  --button-font-family: Arial, sans-serif;
 
   .cm--bar.cm--inline .cm__body {
     max-width: var(--container-width);
@@ -15,7 +16,7 @@
       font-size: 0.8em !important;
       font-weight: 400 !important;
       text-transform: lowercase;
-      font-family: Nexa, sans-serif;
+      font-family: var(--button-font-family);
       text-transform: uppercase;
       letter-spacing: 0.15rem;
     }
@@ -65,6 +66,10 @@
 
   .pm__title {
     font-size: 1.25rem;
+  }
+
+  .pm__section {
+    display: none !important;
   }
 
   .pm__section-title {
