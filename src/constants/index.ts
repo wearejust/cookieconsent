@@ -28,8 +28,7 @@ export const defaultConfig = {
       nl: {
         consentModal: {
           title: "",
-          description:
-            "Wij maken gebruik van functionele en analytische cookies om onze website te optimaliseren. Door gebruik te maken van deze website ga je akkoord met ons <a href='/privacybeleid'>privacybeleid</a><br/><button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>Voorkeuren aanpassen</button>",
+          description: `Wij maken gebruik van functionele en analytische cookies om onze website te optimaliseren. Door gebruik te maken van deze website ga je akkoord met ons <a href='/privacy'>privacybeleid</a>. Je kunt ook je <button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>voorkeuren aanpassen</button>.`,
           acceptAllBtn: "Akkoord",
           acceptNecessaryBtn: "Afwijzen",
           footer: "",
@@ -67,8 +66,7 @@ export const defaultConfig = {
       en: {
         consentModal: {
           title: "",
-          description:
-            "We use functional and analytical cookies to optimize our website. By using this website, you agree to our <a href='/privacybeleid'>privacy policy</a><br/><button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>Adjust preferences</button>",
+          description: `We use functional and analytical cookies to optimize our website. By using this website, you agree to our <a href='/en/privacy'>privacy policy</a>. You can also <button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>adjust your preferences</button>.`,
           acceptAllBtn: "Agree",
           acceptNecessaryBtn: "Reject",
           footer: "",
@@ -98,6 +96,42 @@ export const defaultConfig = {
               title: "Marketing cookies",
               description:
                 "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.",
+              linkedCategory: "marketing",
+            },
+          ],
+        },
+      },
+      de: {
+        consentModal: {
+          description: `Wir verwenden funktionale und analytische Cookies, um unsere Website zu optimieren. Durch die Nutzung dieser Website stimmen Sie unserer <a href='/de/privacy'>Datenschutzerklärung</a> zu. Sie können auch Ihre <button type='button' data-cc='show-preferencesModal' aria-haspopup='dialog'>einstellungen anpassen</button>.`,
+          acceptAllBtn: "Zustimmen",
+          acceptNecessaryBtn: "Ablehnen",
+        },
+        preferencesModal: {
+          title: "Einwilligungspräferenzen",
+          acceptAllBtn: "Alle akzeptieren",
+          acceptNecessaryBtn: "Alle ablehnen",
+          savePreferencesBtn: "Einstellungen speichern",
+          closeIconLabel: "Schließen",
+          serviceCounterLabel: "Dienst|Dienste",
+          sections: [
+            {
+              title:
+                'Unbedingt erforderliche Cookies <span class="pm__badge">Immer aktiviert</span>',
+              description:
+                "Erforderliche Cookies tragen dazu bei, eine Website nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugang zu sicheren Bereichen der Website ermöglichen. Ohne diese Cookies kann die Website nicht richtig funktionieren.",
+              linkedCategory: "necessary",
+            },
+            {
+              title: "Analytische Cookies",
+              description:
+                "Analytische Cookies helfen Website-Betreibern zu verstehen, wie Besucher ihre Website nutzen, indem sie anonym Daten sammeln und melden.",
+              linkedCategory: "analytics",
+            },
+            {
+              title: "Marketing-Cookies",
+              description:
+                "Marketing-Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen. Die Absicht ist, Anzeigen zu zeigen, die für den einzelnen Benutzer relevant und ansprechend sind und somit wertvoller für Publisher und Drittanbieter-Werbetreibende sind.",
               linkedCategory: "marketing",
             },
           ],

@@ -23,6 +23,7 @@
   .cm__desc {
     font-size: 0.9rem;
   }
+
   a {
     font-weight: inherit;
     background-image: none;
@@ -91,6 +92,7 @@
     stroke: #000;
     box-shadow: 0 0 0 1px #000;
   }
+
   .pm__section--toggle .pm__section-desc {
     padding-top: 0;
   }
