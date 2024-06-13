@@ -8,6 +8,23 @@ import { defaultConfig } from "@/constants";
 import { DeepPartial } from "@/types";
 
 export const run = async (configuration: DeepPartial<CookieConsentConfig>) => {
+  const table = document.querySelector("[data-wearejust-cookietable-uuid]");
+  if (table) {
+    let uuid = table.getAttribute("data-wearejust-cookietable-uuid");
+
+    fetch(`https://cookies.wearejust.com/table/${uuid}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "text/html",
+      },
+    })
+      .then((response) => response.text())
+      .then((html) => (table.innerHTML = html))
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
   const mergedConfiguration = merge(defaultConfig, configuration);
   await CookieConsent.run(mergedConfiguration as CookieConsentConfig);
 };
