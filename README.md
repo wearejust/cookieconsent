@@ -261,3 +261,17 @@ function get_google_tag()
   gtag('config', '{{ get_google_tag() }}');
 </script>
 ```
+
+### Cookietable (optional)
+The table renderes a table of the used cookies. We usually place this in the default content page with an `if` statement to check if it's the privacy page or not.
+
+```twig
+// Replace UUID with the uuid
+{% if page.slug == 'privacy' %}
+    <div class="container">
+        <div id="wearejust-cc-cookietable" data-wearejust-cookietable-uuid="$UUID"></div>
+        <a data-cc="show-preferencesModal" id="wearejust-cc-cookietable--change" href="#">Verander uw toestemming</a>
+    </div>
+{% endif %}
+```
+
