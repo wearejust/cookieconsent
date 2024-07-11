@@ -39,14 +39,19 @@ CookieConsent.run({
     },
   },
   // Specify the categories needed. You can disable an category using false
-  // For example; marketing: false
+  // For example; marketing: false. Also use enabled: true to default toggle on category
+  // when opening the preferences modal
   categories: {
     necessary: {
       readOnly: true,
       enabled: true,
     },
-    analytics: {},
-    marketing: {},
+    analytics: {
+      enabled: true,
+    },
+    marketing: {
+      enabled: true,
+    },
   },
   // Please adjust the link to the privacy page. The chosen language is done by the <html lang='nl'> tag.
   language: {
@@ -263,6 +268,7 @@ function get_google_tag()
 ```
 
 ### Cookietable (optional)
+
 The table renderes a table of the used cookies. We usually place this in the default content page with an `if` statement to check if it's the privacy page or not.
 
 ```twig
@@ -274,4 +280,3 @@ The table renderes a table of the used cookies. We usually place this in the def
     </div>
 {% endif %}
 ```
-

@@ -17,6 +17,7 @@ export const defaultConfig = {
   categories: {
     necessary: {
       readOnly: true,
+      enabled: true,
     },
     analytics: {},
     marketing: {},
