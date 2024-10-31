@@ -52,6 +52,9 @@ CookieConsent.run({
     marketing: {
       enabled: true,
     },
+    preference: {
+      enabled: true,
+    },
   },
   // Please adjust the link to the privacy page. The chosen language is done by the <html lang='nl'> tag.
   language: {
@@ -202,6 +205,18 @@ Of course these are some default styles but overwrite the styles that you need.
         'ad_user_data': 'denied'
     });
   </script>
+
+  <script type="text/plain" data-category="preference">
+    gtag('consent', 'update', {
+        'personalization_storage': 'granted'
+    });
+  </script>
+
+  <script type="text/plain" data-category="!preference">
+    gtag('consent', 'update', {
+        'personalization_storage': 'denied'
+    });
+  </script>
 </head>
 ```
 
@@ -231,9 +246,9 @@ function get_cookie_preferences()
       'analytics_storage' =>  in_array('analytics', $cookie['categories'] ?? []) ? 'granted' : 'denied',
       'ad_user_data' =>       in_array('marketing', $cookie['categories'] ?? []) ? 'granted' : 'denied',
       'ad_personalization' => in_array('marketing', $cookie['categories'] ?? []) ? 'granted' : 'denied',
+      'personalization_storage' => in_array('preference', $cookie['categories'] ?? []) ? 'granted' : 'denied',
 
       'functionality_storage' => 'granted',
-      'personalization_storage' => 'granted',
       'security_storage' => 'granted',
   ]);
 }

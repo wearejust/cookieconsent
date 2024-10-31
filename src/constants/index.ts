@@ -21,6 +21,7 @@ export const defaultConfig = {
     },
     analytics: {},
     marketing: {},
+    preference: {},
   },
   language: {
     default: "nl",
@@ -61,6 +62,12 @@ export const defaultConfig = {
                 "Marketingcookies worden gebruikt om bezoekers op websites te volgen. De bedoeling is om advertenties weer te geven die relevant en aantrekkelijk zijn voor de individuele gebruiker en daardoor waardevoller voor uitgevers en externe adverteerders.",
               linkedCategory: "marketing",
             },
+            {
+              title: "Voorkeurscookies",
+              description:
+                "Voorkeurscookies zorgen ervoor dat een website informatie kan onthouden die van invloed is op het gedrag en de vormgeving van de website, zoals de taal van uw voorkeur of de regio waar u woont.",
+              linkedCategory: "preference",
+            },
           ],
         },
       },
@@ -99,6 +106,12 @@ export const defaultConfig = {
                 "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.",
               linkedCategory: "marketing",
             },
+            {
+              title: "Preference Cookies",
+              description:
+                "Preference cookies allow a website to remember information that influences the behavior and appearance of the website, such as your preferred language or the region you live in.",
+              linkedCategory: "preference",
+            }
           ],
         },
       },
@@ -135,6 +148,12 @@ export const defaultConfig = {
                 "Marketing-Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen. Die Absicht ist, Anzeigen zu zeigen, die für den einzelnen Benutzer relevant und ansprechend sind und somit wertvoller für Publisher und Drittanbieter-Werbetreibende sind.",
               linkedCategory: "marketing",
             },
+            {
+              title: "Präferenz-Cookies",
+              description:
+                "Präferenz-Cookies ermöglichen es einer Website, Informationen zu speichern, die das Verhalten und das Erscheinungsbild der Website beeinflussen, wie z. B. Ihre bevorzugte Sprache oder die Region, in der Sie wohnen.",
+              linkedCategory: "preference",
+            }
           ],
         },
       },
